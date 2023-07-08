@@ -17,6 +17,6 @@
 
     <filter-mapping>
         <filter-name>wicket.demo.counter</filter-name>
-        <url-pattern>/counter</url-pattern>
+        <url-pattern>/counter/*</url-pattern>
     </filter-mapping>
 </web-app>

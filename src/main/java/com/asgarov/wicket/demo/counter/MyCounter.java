@@ -21,6 +21,6 @@ public class MyCounter extends WebPage {
                 counter++;
             }
         });
-        add(new Label("counter-label", "0"));
+        add(new Label("counter-label", () -> counter));
     }
 }
