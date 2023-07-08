@@ -6,16 +6,17 @@
     <display-name>WicketDemo</display-name>
 
     <filter>
-        <filter-name>wicket.demo</filter-name>
+        <filter-name>wicket.demo.counter</filter-name>
         <filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
         <init-param>
             <param-name>applicationClassName</param-name>
-            <param-value>com.asgarov.wicket.demo.HelloWorldApplication</param-value>
+            <param-value>com.asgarov.wicket.demo.counter.LinkCounterApplication</param-value>
         </init-param>
     </filter>
 
+
     <filter-mapping>
-        <filter-name>wicket.demo</filter-name>
-        <url-pattern>/*</url-pattern>
+        <filter-name>wicket.demo.counter</filter-name>
+        <url-pattern>/counter</url-pattern>
     </filter-mapping>
 </web-app>
